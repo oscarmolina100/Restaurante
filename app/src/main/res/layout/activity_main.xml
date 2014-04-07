@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.restaurante.app.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menú"
+        android:id="@+id/btnMenu"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promociones"
+        android:id="@+id/btnPromo"
+        android:layout_below="@+id/btnMenu"
+        android:layout_alignLeft="@+id/btnMenu"
+        android:layout_alignStart="@+id/btnMenu"
+        android:layout_alignRight="@+id/btnMenu"
+        android:layout_alignEnd="@+id/btnMenu"
+        android:textSize="30sp"
+        android:onClick="abrirPromociones" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sucursales"
+        android:id="@+id/btnSucursales"
+        android:layout_below="@+id/btnPromo"
+        android:layout_alignLeft="@+id/btnPromo"
+        android:layout_alignStart="@+id/btnPromo"
+        android:layout_alignRight="@+id/btnPromo"
+        android:layout_alignEnd="@+id/btnPromo"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
